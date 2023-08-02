@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상세페이지 | 올리브영 -임채현</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/product.css">
+
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="whereiam wrap">
+        <ul>
+            <li><a class="home" href="../pages/main.html"><img class="crop" src="../images/image_03/ico_location.png"
+                        alt=""></a>
+                <div class="next_loc"><img class="crop" src="../images/image_03/ico_location.png" alt=""></div>
+            </li>
+            <li><span>푸드</span>
+                <div class="down"><img src="../images/image_03/ico_arrow_down.png" alt=""></div></a>
+                <div class="next_loc"><img class="crop" src="../images/image_03/ico_location.png" alt=""></div>
+                <ul class="mini_cate">
+                    <li><a href="#!">구강/건강용품</a></li>
+                    <li><a href="#!">여성/위생용품</a></li>
+                    <li><a href="#!">건강식품</a></li>
+                    <li><a href="#!">푸드</a></li>
+                </ul>
+            </li>
+            <li><span>디저트/간식</span>
+                <div class="down"><img src="../images/image_03/ico_arrow_down.png" alt=""></div></a>
+                <div class="next_loc"><img class="crop" src="../images/image_03/ico_location.png" alt=""></div>
+                <ul class="mini_cate">
+                    <li><a href="#!">구강/건강용품</a></li>
+                    <li><a href="#!">여성/위생용품</a></li>
+                    <li><a href="#!">건강식품</a></li>
+                    <li><a href="#!">푸드</a></li>
+                </ul>
+            </li>
+            <li><span>견과/과일</span>
+                <div class="down"><img src="../images/image_03/ico_arrow_down.png" alt=""></div></a>
+                <ul class="mini_cate">
+                    <li><a href="#!">구강/건강용품</a></li>
+                    <li><a href="#!">여성/위생용품</a></li>
+                    <li><a href="#!">건강식품</a></li>
+                    <li><a href="#!">푸드</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script>
+        $('.whereiam>ul>li>span, .whereiam>ul>li>.down').hover(function () {
+            $(this).parent().find('.mini_cate').css('opacity', 100)
+            var i = $('.mini_cate li a')
+            if (i.text() == $('.whereiam>ul>li>span').text()) {
+                i.css('color', 'yellow')
+            }
+        }, function () {
+            $('.whereiam>ul>li').find('.mini_cate').css('opacity', 0)
+        })
+
+    </script>
+    <div class="contain wrap">
+        <div class="section">
+            <div class="img_show1">
+                <div class="item">
+                    <img src="../images/image_03/m_item01.webp" alt="">
+                    <div class="best">베스트</div>
+                </div>
+                <div class="item">
+                    <img src="../images/image_03/m_item02.webp" alt="">
+                    <div class="best">베스트</div>
+                </div>
+            </div>
+            <div class="img_show2">
+                <div class="item on">
+                    <img src="../images/image_03/m_item01.webp" alt="">
+                </div>
+                <div class="item">
+                    <img src="../images/image_03/m_item02.webp" alt="">
+                </div>
+            </div>
+            <div class="review_star">
+                <div class="star">
+                    <strong>고객 리뷰</strong>
+                    <span><img src="../images/image_03/4point5.png" alt=""></span>
+                    <strong>4.5</strong>
+                    <span>(4,370건)</span>
+                </div>
+                <a href="#!" class="sns"><img src="../images/image_03/ico_social.png" alt="" class="crop"></a>
+            </div>
+        </div>
+
+        <script>
+            $('.img_show2 .item').click(function () {
+                $('.img_show2 .item').removeClass('on')
+                $(this).addClass('on')
+                $('.img_show1 .item').hide()
+                $('.img_show1 .item').eq($(this).index()).show()
+            })
+        </script>
+
+        <div class="aside">
+            <div class="brand_section"><a href="#!">딜라이트프로젝트 ></a></div>
+            <h2>딜라이트 프로젝트 쫀득한 복숭아말랭이 62 g</h2>
+            <p>원산지 : 상품설명 또는 구매정보 페이지 참조</p>
+            <div class="price_section">
+                <span>3,300원</span>
+                <span class="real">2,900원</span>
+                <div class="benefit">
+                    <a href="#">혜택정보 <img src="../images/image_03/icon_sale_arrow.png" style="transform: scaleY(-1);"
+                            alt=""></a>
+                    <div class="bene_guide" style="display: none;">
+                        나중에하자 포지션 사용
+                    </div>
+                </div>
+            </div>
+            <div class="etc">
+                <div class="sale">세일</div>
+                <div class="today">오늘드림</div>
+            </div>
+            <div class="viewer">
+                <img src="../images/image_03/ico_viewEye.png" alt="">
+                <strong>27</strong>명이 보고있어요
+            </div>
+            <div class="delivery">
+                <div class="title">
+                    <h3>배송정보</h3>
+                    <img src="../images/image_03/ico_notice_gray.png" alt="">
+                    <div class="modal" style="display: none;">나중에</div>
+                </div>
+                <div class="de_ex">
+                    <div class="normal">
+                        <div class="left"> 일반배송<span>|</span></div>
+                        <div class="right">2,500원 ( 20,000 원 이상 무료배송 )<br>
+                            올리브영 배송 | 평균 3일 이내 배송</div>
+                    </div>
+                    <div class="today_de">
+                        <div class="left"> 오늘드림<span>|</span></div>
+                        <div class="right">2,500원 또는 5,000원
+                            <a href="#!"><img src="../images/image_03/ico_notice_gray.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="pick-up">
+                        <div class="left"> 픽업<span>|</span></div>
+                        <div class="right">배송비 조건 없음
+                            <a href="#!"><img src="../images/image_03/ico_notice_gray.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buy_benefit">
+                <h3>결제해택</h3>
+                <div class="bb_ex">
+                    <div>THE CJ 카드 추가 10%할인
+                        <a href="#!"><img src="../images/image_03/ico_notice_gray.png" alt=""></a>
+                    </div>
+                    <div>CJ ONE 포인트 최대 1% 적립 예상
+                        <a href="#!"><img src="../images/image_03/ico_notice_gray.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <script>
+                // $('body img[src*=ico_notice_gray.png]').css({width:'16px',height:'16px'})
+                $('.delivery img').attr("src", "../images/image_03/ico_notice_gray.png").css({ width: '16px', height: '16px' })
+                $('.buy_benefit img').attr("src", "../images/image_03/ico_notice_gray.png").css({ width: '16px', height: '16px' })
+            </script>
+            <div class="buy_btn">
+                <p>구매수량</p>
+                <div class="pm">
+                    <div class="minus" style="cursor: pointer;"><img src="../images/image_03/ico_calculator_minus.png"
+                            alt=""></div>
+                    <span>1</span>
+                    <div class="plus" style="cursor: pointer;"><img src="../images/image_03/ico_calculator_plus.png"
+                            alt=""></div>
+                </div>
+            </div>
+            <div class="pay">
+                <div class="total">
+                    <span>상품금액 합계</span>
+                    <span>2,900원</span>
+                </div>
+                <a href="#!"><input type="checkbox">오늘드림으로 받아 보시겠어요? <span><img
+                            src="../images/image_03/ico_notice_white.png" alt=""></span></a>
+                <div class="pay_btn">
+                    <div class="pb1 basket"><a href="#!">장바구니</a></div>
+                    <div class="pb1 now_purchase"><a href="#!">바로구매</a></div>
+                    <div class="pb2 gift"><a href="#!"><img src="../images/image_03/icon-gift-32-line-fff.png"
+                                alt=""></a></div>
+                    <div class="pb2 like"><a href="#!"><img src="../images/image_03/icon-like.png" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.pay > a').click(function () {
+            confirm('회원전용 서비스입니다. 로그인 하시겠습니까?');
+        })
+        let ea = 1
+        $('.buy_btn .pm div').click(function () {
+            if ($(this).hasClass('plus')) {
+                ea++
+            } else if ($(this).hasClass('minus')) {
+                if (ea <= 1) return
+                ea--
+            } else {
+                ea = 1
+            }
+            $('.buy_btn .pm span').text(ea)
+            var total = ea * 2900
+            var price = total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+            $('.pay .total span').eq(1).text(price + '원')
+        })
+    </script>
+    <div class="brand_link wrap">
+        <a href="#" class="offline">
+            <img src="../images/image_03/icon_store.png" alt="">
+            <strong>구매 가능 매장</strong>을 확인해보세요 >
+        </a>
+        <a href="#" class="delight">
+            <img src="../images/image_03/delight_project.jpg" alt="">
+            <strong>딜라이트 프로젝트 브랜드관 ></strong>
+        </a>
+    </div>
+    <div class="product_main">
+        <div class="select wrap">
+            <a href="#!" class="on">상품설명</a>
+            <a href="#!">구매정보</a>
+            <a href="#!">리뷰(2,403)</a>
+            <a href="#!">Q&A (6)</a>
+        </div>
+        <div class="content wrap">
+            <div class="first">
+                <a href="#!"><img src="../images/image_03/banner_ad.jpg" alt=""></a>
+                <div><img src="../images/image_03/detail.jpg" alt=""></div>
+                <div class="recommend">
+                    <div class="title">
+                        <h3>이런 디저트/간식 상품은 어때요?</h3>
+                        <a href="#!">더보기 ></a>
+                    </div>
+                    <div class="recom_product_section">
+                        <div class="before"></div>
+                        <div class="recom_product_slider">
+                            <div class="recom_procuct">
+                                <a href="#!"><img src="../images/image_03/recom01.jpg" alt=""></a>
+                                <a href="#!" class="re_ex">
+                                    <h4 class="name">[단독기획] 딜라이트 프로젝트 쫀득한 군고구마.망고말랭이 대용량 기획 맛있는거에용</h4>
+                                    <p class="price">
+                                        9,500원
+                                    </p>
+                                    <span class="today">오늘드림</span>
+                                </a>
+                            </div>
+                            <div class="recom_procuct">
+                                <a href="#!"><img src="../images/image_03/recom02.jpg" alt=""></a>
+                                <a href="#!" class="re_ex">
+                                    <h4 class="name">딜라이트 프로젝트 쫀득한 군고구마 70g(국내산)</h4>
+                                    <p class="price">
+                                        <span>3,200원</span>
+                                        2,700원
+                                    </p>
+                                    <div class="etc">
+                                        <span class="today">오늘드림</span>
+                                        <span class="sale">세일</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="recom_procuct">
+                                <a href="#!"><img src="../images/image_03/recom03.jpg" alt=""></a>
+                                <a href="#!" class="re_ex">
+                                    <h4 class="name">딜라이트 프로젝트 스프맛 베이글칩 2종 외 4종 택1</h4>
+                                    <p class="price">
+                                        2,700원
+                                    </p>
+                                    <span class="today">오늘드림</span>
+                                </a>
+                            </div>
+                            <div class="recom_procuct">
+                                <a href="#!"><img src="../images/image_03/recom03.jpg" alt=""></a>
+                                <a href="#!" class="re_ex">
+                                    <h4 class="name">딜라이트 프로젝트 스프맛 베이글칩 2종 외 4종 택1</h4>
+                                    <p class="price">
+                                        2,700원
+                                    </p>
+                                    <span class="today">오늘드림</span>
+                                </a>
+                            </div>
+                            <div class="recom_procuct">
+                                <a href="#!"><img src="../images/image_03/recom01.jpg" alt=""></a>
+                                <a href="#!" class="re_ex">
+                                    <h4 class="name">[단독기획] 딜라이트 프로젝트 쫀득한 군고구마.망고말랭이 대용량 기획 맛있는거에용</h4>
+                                    <p class="price">
+                                        9,500원
+                                    </p>
+                                    <span class="today">오늘드림</span>
+                                </a>
+                            </div>
+                            <div class="recom_procuct">
+                                <a href="#!"><img src="../images/image_03/recom02.jpg" alt=""></a>
+                                <a href="#!" class="re_ex">
+                                    <h4 class="name">딜라이트 프로젝트 쫀득한 군고구마 70g(국내산)</h4>
+                                    <p class="price">
+                                        <span>3,200원</span>
+                                        2,700원
+                                    </p>
+                                    <div class="etc">
+                                        <span class="today">오늘드림</span>
+                                        <span class="sale">세일</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="after"></div>
+                    </div>
+                </div>
+                <div class="event">
+                    <h2>연관된 기획전</h2>
+                    <a href="#!"><img src="../images/image_03/dot.gif" alt="">비건&프로틴 맛있는 건강간식 할인전</a>
+                </div>
+                <script>
+                    $('.recom_product_slider').slick({
+                        autoplay: false,
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        prevArrow: '.recom_product_section .before',
+                        nextArrow: '.recom_product_section .after'
+                    })
+                </script>
+            </div>
+            <div class="second">
+                <h2>상품정보 제공고시</h2>
+                <table class="tg" style="table-layout: fixed; width: 735px">
+                    <colgroup>
+                        <col style="width: 260px">
+                        <col style="width: 760px">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th class="tg-0pky">제품명</th>
+                            <th class="tg-1pky">쫀득복숭아말랭이</th> 
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky">식품의 유형</td>
+                            <td class="tg-1pky">당절임, 질소포장제품</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky">생산자 및 소재지(수입품의 경우 생산자, 수입자 및 제조국)</td>
+                            <td class="tg-1pky">농업회사법인(주)정심푸드/전라남도 강진군 칠량면 청자로 656-54</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky">제조연월일, 소비기한(품질유지기한)</td>
+                            <td class="tg-1pky">제조연월일: 주문일로부터 5개월 이내, 소비기한: 제조일로부터 6개월</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky">포장 단위별 내용물의 용량(중량),수량</td>
+                            <td class="tg-1pky">62g</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky">원재료명 및 함량</td>
+                            <td class="tg-1pky">복숭아(태국산) 90 %, 설탕, 구연산, 무수아황산(산화방지제)<br>
+                                *복숭아, 아황산류 함유</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky">영양성분 표시 대상 여부</td>
+                            <td class="tg-1pky">총열량 : 200 kcal,<br>
+                                탄수화물 49 g(15 %), 당류 36 g(36 %) , 단백질 1 g미만(1 %), 지방 0 g(0 %), 포화지방 0 g(0 %), 트랜스지방 0 g,<br>
+                                콜레스테롤 0 mg(0 %), 나트륨 90 mg(5 %)</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky">유전자변형식품 여부</td>
+                            <td class="tg-1pky">해당사항 없음</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky">수입식품여부</td>
+                            <td class="tg-1pky">해당사항 없음</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky">소비자안전을 위한 주의사항</td>
+                            <td class="tg-1pky">동제품 표면에 흰가루는 설탕이니 안심하고 드십시오. 제품의 신선도를 유지하기위하여 넣은 탈산소제는 드시지 마십시오. 칼이나 가위 등으로 개봉할 경우 탈산소제가 훼손될 수 있으니 손으로 개봉하여 주십시오. 특이체질, 알레르기 체질의 경우에는 개인에 따라 과민반응이 나타날 수 있으므로 원료를 확인하신 후 섭취하시길 바라며, 이상증상이 생길 경우 섭취를 중단하시고 의사와 상담하세요. 이 제품은 대두, 우유, 밀을 사용한 제품과 같은 제조시설에서 제조하고 있습니다.</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky">소비자상담 전화번호</td>
+                            <td class="tg-1pky">1577-4887</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="third">
+                <div class="summary">
+                    <div class="score">
+                        <div class="face">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.content>div').css('display','none')
+        $('.content .first').css('display','block')
+        $('.select a').click(function () {
+            $('.select a').removeClass('on')
+            $(this).addClass('on')
+            $('.content>div').css('display','none')
+            $('.content>div').eq($(this).index()).css('display','block')
+        })
+    </script>
+    <div class="footer"></div>
+</body>
+
+</html>
