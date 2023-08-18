@@ -21,8 +21,7 @@
     <div class="header"></div>
     <div class="whereiam wrap">
         <ul>
-            <li><a class="home" href="../pages/main.html"><img class="crop" src="../images/image_03/ico_location.png"
-                        alt=""></a>
+            <li><a class="home" href="../pages/main.html"><img class="crop" src="../images/image_03/ico_location.png"alt=""></a>
                 <div class="next_loc"><img class="crop" src="../images/image_03/ico_location.png" alt=""></div>
             </li>
             <li><span>푸드</span>
@@ -750,6 +749,11 @@
                 photoNum.css({'width':'400px','height':'600px'})
                 photoNum.find('img').css({'width':'400px','height':'600px','object-fit':'contain','margin':'0 auto'})
             }
+        })
+
+        $('.review .align .sequence a').click(function(){
+            $('.review .align .sequence a').removeClass('on')
+            $(this).addClass('on')
         })
 
         $('.review_contain .keyword ul li').click(function(){
