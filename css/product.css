@@ -54,6 +54,7 @@
   transform: translate(-50%, -50%);
 }
 
+/*  */
 .contain {
   display: flex;
   gap: 60px;
@@ -543,26 +544,34 @@
 .whereiam ul li .down {
   cursor: pointer;
 }
+.whereiam ul li span {
+  width: fit-content;
+  height: 26.5px;
+  line-height: 26.5px;
+}
 .whereiam > ul > li {
   position: relative;
 }
+
 .whereiam .mini_cate {
+  border: 1px solid var(--color-font3);
+  font-size: 12px;
   position: absolute;
   top: 26.5px;
   left: 0;
   display: flex;
   flex-direction: column;
-  width: 140px;
+  width: 120px;
   height: fit-content;
   padding: 10px;
   background-color: white;
   z-index: 1;
-  opacity: 0;
+  visibility: hidden;
 }
 .whereiam .mini_cate li a {
   display: block;
   text-align: left;
-  width: 120px;
+  width: 100px;
   height: fit-content;
 }
 .whereiam .mini_cate li:hover a {

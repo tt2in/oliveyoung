@@ -38,34 +38,51 @@
                 <div class="down"><img src="../images/image_03/ico_arrow_down.png" alt=""></div></a>
                 <div class="next_loc"><img class="crop" src="../images/image_03/ico_location.png" alt=""></div>
                 <ul class="mini_cate">
-                    <li><a href="#!">구강/건강용품</a></li>
-                    <li><a href="#!">여성/위생용품</a></li>
-                    <li><a href="#!">건강식품</a></li>
-                    <li><a href="#!">푸드</a></li>
+                    <li><a href="#!">식단관리</a></li>
+                    <li><a href="#!">디저트/간식</a></li>
+                    <li><a href="#!">생수/음료/커피</a></li>
+                    <li><a href="#!">간편식/요리</a></li>
+                    <li><a href="#!">베이비푸드</a></li>
                 </ul>
             </li>
             <li><span>견과/과일</span>
                 <div class="down"><img src="../images/image_03/ico_arrow_down.png" alt=""></div></a>
                 <ul class="mini_cate">
-                    <li><a href="#!">구강/건강용품</a></li>
-                    <li><a href="#!">여성/위생용품</a></li>
-                    <li><a href="#!">건강식품</a></li>
-                    <li><a href="#!">푸드</a></li>
+                    <li><a href="#!">과자/스낵</a></li>
+                    <li><a href="#!">케이크/빵/떡</a></li>
+                    <li><a href="#!">초콜릿</a></li>
+                    <li><a href="#!">캔디/젤리</a></li>
+                    <li><a href="#!">견과/과일</a></li>
+                    <li><a href="#!">아이스크림/요거트</a></li>
+                    <li><a href="#!">잼/시럽</a></li>
                 </ul>
             </li>
         </ul>
     </div>
     <script>
-        $('.whereiam>ul>li>span, .whereiam>ul>li>.down').hover(function () {
-            $(this).parent().find('.mini_cate').css('opacity', 100)
-            var i = $('.mini_cate li a')
-            if (i.text() == $('.whereiam>ul>li>span').text()) {
-                i.css('color', 'yellow')
-            }
+        $('.whereiam>ul>li').hover(function () {
+            $(this).find('.mini_cate').css('visibility', 'visible')
         }, function () {
-            $('.whereiam>ul>li').find('.mini_cate').css('opacity', 0)
+            $('.whereiam>ul>li').find('.mini_cate').css('visibility', 'hidden')
         })
 
+        $('.whereiam>ul>li').each(function(index,item){
+            var i = $(item).find('span').text()
+            var par = $(item).find('.mini_cate li a')
+            $(par).each(function(ind,it){
+                var ii = $(it).text()
+                if(i == ii){
+                    $(it).css('color','var(--color-font)')
+                }else{
+                    return;
+                }
+            })
+        })
+        // $('.mini_cate li a').each(function(index,item){
+        //     var i = $(item).text()
+        //     var par = $(this).parents().find('span').text()
+        //     console.log(par)
+        // })
     </script>
     <div class="contain wrap">
         <div class="section">
