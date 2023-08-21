@@ -201,7 +201,14 @@
     </div>
     <script>
         $('.pay > a').click(function () {
-            confirm('회원전용 서비스입니다. 로그인 하시겠습니까?');
+            var answer = confirm('회원전용 서비스입니다. 로그인 하시겠습니까?');
+            if(answer == true){
+                alert('로그인 화면으로 넘어갈 script')
+                // location.replace('.html')
+            }else{
+                $('.pay>a>input').removeAttr('checked')
+            }
+            
         })
         let ea = 1
         $('.buy_btn .pm div').click(function () {
@@ -501,9 +508,9 @@
                                 <a href="#!">최신순</a>
                             </div>
                             <div class="check">
-                                <input id="id1" type="checkbox" checked><label for="id1">포토리뷰</label> 
-                                <input id="id1" type="checkbox" checked><label for="id1">일반리뷰</label>
-                                <input id="id1" type="checkbox" checked><label for="id1">체험단</label>
+                                <label for="id1">포토리뷰<input id="id1" type="checkbox" checked><span class="checkmark"></span></label> 
+                                <label for="id2">일반리뷰<input id="id2" type="checkbox" checked><span class="checkmark"></span></label>
+                                <label for="id3">체험단<input id="id3" type="checkbox" checked><span class="checkmark"></span></label>
                                 <a href="#!"><img src="../images/image_03/ico_filter.png" alt="">리뷰 검색 필터</a>
                             </div>
                         </div>
